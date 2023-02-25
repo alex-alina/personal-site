@@ -1,5 +1,4 @@
 import React from "react";
-// import useStyles from "./ProjectCard.styles";
 import {
   Button,
   Card,
@@ -11,7 +10,6 @@ import {
 } from "@mui/material";
 
 export default function ProjectCard(props) {
-  // const classes = useStyles();
   const {
     title,
     description,

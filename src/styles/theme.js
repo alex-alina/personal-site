@@ -5,10 +5,10 @@ let theme = createTheme({
   typography: {
     fontFamily: "Roboto",
     fontSize: 20,
-    h4: { color: colors.turquoise[6] },
+    h4: { color: colors.turquoise[5] },
     h5: { color: colors.grey[8] },
     body1: { color: colors.grey[8] },
-    subtitle1: { color: colors.turquoise[6] },
+    subtitle1: { color: colors.turquoise[5] },
   },
   breakpoints: {
     values: {
@@ -38,13 +38,17 @@ let theme = createTheme({
     //     disableRipple: true, // No more ripple, on the whole application 💣!
     //   },
     // },
+
     MuiMenu: {
-      paper: {
-        position: "fixed",
-        top: 0,
-        right: 0,
-        left: 0,
-        backgroundColor: "#fff",
+      styleOverrides: {
+        paper: {
+          position: "fixed",
+          top: 0,
+          right: 0,
+          left: 0,
+          backgroundColor: "#fff",
+          width: "90%",
+        },
       },
     },
     MuiLink: {

@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import useStyles from "./SideMenu.styles";
 import menuContent from "../../utils/menuContent";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Menu, MenuItem, IconButton } from "@mui/material";
@@ -30,6 +29,7 @@ export default function SideMenu() {
       </IconButton>
 
       <Menu
+        width="90%"
         id="side-menu"
         anchorEl={anchorEl}
         keepMounted
@@ -38,7 +38,16 @@ export default function SideMenu() {
       >
         {menuContent.map((item, index) => (
           <MenuItem onClick={handleClose} key={index}>
-            <Link to={item.route}>{item.text}</Link>
+            <Link
+              to={item.route}
+              style={{
+                textDecoration: "none",
+                color: "#138D75",
+                fontSize: 24,
+              }}
+            >
+              {item.text}
+            </Link>
           </MenuItem>
         ))}
       </Menu>
