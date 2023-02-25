@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import faqContent from "../utils/faqContent";
+import faqContent from "../text/faqContent";
 import gardenOne from "../assets/gardenOne.png";
 import gardenTwo from "../assets/gardenTwo.jpg";
 import gardenThree from "../assets/gardenThree.jpg";

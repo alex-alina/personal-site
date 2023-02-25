@@ -17,9 +17,10 @@ export default function Intro() {
       <Box
         component="section"
         display="flex"
+        flexDirection={["column", "column", "row", "row"]}
         justifyContent="space-between"
         alignItems="flex-start"
-        marginTop={4}
+        marginTop={[0, 0, 2, 2]}
         marginBottom={6}
         overflow="hidden"
         width="100%"

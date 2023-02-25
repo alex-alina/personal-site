@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import profilePic from "../assets/profilePic.jpg";
-import aboutContent from "../utils/aboutContent";
+import aboutContent from "../text/aboutContent";
 import Contact from "./Contact";
 import Faq from "./Faq";
 

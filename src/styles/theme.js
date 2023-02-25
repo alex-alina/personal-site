@@ -27,7 +27,7 @@ let theme = createTheme({
       dark: "#37474f",
     },
     textSecondary: {
-      main: "#37474f",
+      main: "#34495E",
     },
   },
   components: {
@@ -38,7 +38,13 @@ let theme = createTheme({
     //     disableRipple: true, // No more ripple, on the whole application 💣!
     //   },
     // },
-
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          background: "rgba(22, 160, 133, 0.90)",
+        },
+      },
+    },
     MuiMenu: {
       styleOverrides: {
         paper: {

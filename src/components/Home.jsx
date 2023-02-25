@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import React from "react";
 import Contact from "./Contact";
 import Intro from "./Intro";
-import Projects from "./Projects/Projects";
+import Projects from "./Projects";
 
 export default function Home() {
   return (

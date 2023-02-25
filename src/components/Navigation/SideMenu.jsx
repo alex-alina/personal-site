@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import menuContent from "../../utils/menuContent";
+import menuContent from "../../text/menuContent";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Menu, MenuItem, IconButton } from "@mui/material";
 

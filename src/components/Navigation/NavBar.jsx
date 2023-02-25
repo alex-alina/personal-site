@@ -11,7 +11,7 @@ import {
 import React from "react";
 import { Link } from "react-router-dom";
 import AlinaRusuCV from "../../assets/AlinaRusuCV.pdf";
-import menuContent from "../../utils/menuContent";
+import menuContent from "../../text/menuContent";
 import SideMenu from "./SideMenu";
 
 export default function NavBar() {
@@ -103,7 +103,7 @@ export default function NavBar() {
             >
               <Box
                 sx={{
-                  wordSpacing: "2em",
+                  fontSize: 18,
                   display: {
                     mobile: "none",
                     tablet: "none",
@@ -114,7 +114,9 @@ export default function NavBar() {
               >
                 Download
               </Box>
-              <Box ml={1}>CV</Box>
+              <Box ml={1} fontSize={18}>
+                CV
+              </Box>
             </Button>
           </MuiLink>
         </Toolbar>
