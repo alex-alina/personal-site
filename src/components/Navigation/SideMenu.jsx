@@ -1,8 +1,8 @@
+import MenuIcon from "@mui/icons-material/Menu";
+import { IconButton, Menu, MenuItem } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import menuContent from "../../text/menuContent";
-import MenuIcon from "@mui/icons-material/Menu";
-import { Menu, MenuItem, IconButton } from "@mui/material";
 
 export default function SideMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);

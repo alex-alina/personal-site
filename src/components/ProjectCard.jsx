@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Button,
   Card,
@@ -9,6 +8,7 @@ import {
   Link,
   Typography,
 } from "@mui/material";
+import React from "react";
 
 export default function ProjectCard(props) {
   const {
@@ -25,13 +25,13 @@ export default function ProjectCard(props) {
   return (
     <Card
       sx={{
+        mb: 4,
         width: {
           mobile: "100%",
           tablet: "80%",
           laptop: "48%",
           desktop: "48%",
         },
-        mb: 4,
       }}
     >
       <CardActionArea>

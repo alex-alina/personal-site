@@ -24,20 +24,12 @@ let theme = createTheme({
     },
     secondary: {
       main: "#fff",
-      dark: "#37474f",
     },
     textSecondary: {
       main: "#34495E",
     },
   },
   components: {
-    // Name of the component
-    // MuiButtonBase: {
-    //   defaultProps: {
-    //     // The props to change the default for.
-    //     disableRipple: true, // No more ripple, on the whole application 💣!
-    //   },
-    // },
     MuiAppBar: {
       styleOverrides: {
         root: {
@@ -65,19 +57,6 @@ let theme = createTheme({
             color: colors.turquoise[9],
           },
         },
-      },
-    },
-    MuiButton: {
-      contained: {
-        minWidth: "120px",
-        backgroundColor: "#0098a6",
-        borderRadius: "50px",
-        border: "2px solid #0098a6",
-        "&:hover": {
-          backgroundColor: "#14a3ab !important",
-          border: "2px solid #14a3ab",
-        },
-        color: "#fff",
       },
     },
     MuiIcon: {
@@ -127,5 +106,7 @@ let theme = createTheme({
     },
   },
 });
+
 theme = responsiveFontSizes(theme);
+
 export default theme;

@@ -6,11 +6,11 @@ import Contact from "./Contact";
 import Faq from "./Faq";
 
 export default function AboutSection() {
-  const { greeting, intro, ...rest } = aboutContent;
+  const { greeting, intro, ...content } = aboutContent;
 
   return (
     <Box
-      sx={() => ({
+      sx={{
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -24,7 +24,7 @@ export default function AboutSection() {
           laptop: "70%",
           desktop: "65%",
         },
-      })}
+      }}
     >
       <Box
         component="section"
@@ -72,7 +72,7 @@ export default function AboutSection() {
           <Typography lineHeight={1.5} align="left">
             {intro}
           </Typography>
-          {Object.values(rest).map((p, i) => {
+          {Object.values(content).map((p, i) => {
             return (
               <Typography
                 key={i}

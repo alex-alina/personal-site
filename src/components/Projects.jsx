@@ -46,6 +46,7 @@ export default function Projects() {
           } = project;
           return (
             <ProjectCard
+              key={i}
               title={title}
               description={description}
               image={image}

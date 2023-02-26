@@ -19,7 +19,7 @@ export default function NavBar() {
     <div>
       <AppBar position="static" backgroundcolor="primary">
         <Toolbar
-          sx={() => ({
+          sx={{
             display: "flex",
             justifyContent: "space-between",
             px: 0,
@@ -30,7 +30,7 @@ export default function NavBar() {
               laptop: "70%",
               desktop: "65%",
             },
-          })}
+          }}
         >
           <Box
             sx={{
