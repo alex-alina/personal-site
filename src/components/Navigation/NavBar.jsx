@@ -44,6 +44,48 @@ export default function NavBar() {
           >
             <SideMenu />
           </Box>
+          <MuiLink
+            underline="none"
+            href={AlinaRusuCV}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              size="small"
+              variant="outlined"
+              borderRadius={100}
+              endIcon={<DownloadIcon />}
+              sx={(theme) => ({
+                px: 3,
+                borderRadius: 50,
+                background: "#E8F6F3",
+                borderColor: "#E8F6F3",
+                color: "#138D75",
+                "&:hover": {
+                  background: "#D0ECE7",
+                  borderColor: "#D0ECE7",
+                  color: "#0B5345",
+                },
+              })}
+            >
+              <Box
+                sx={{
+                  fontSize: 18,
+                  display: {
+                    mobile: "none",
+                    tablet: "none",
+                    laptop: "block",
+                    desktop: "block",
+                  },
+                }}
+              >
+                Download
+              </Box>
+              <Box ml={1} fontSize={18}>
+                CV
+              </Box>
+            </Button>
+          </MuiLink>
 
           <Box
             sx={{
@@ -69,7 +111,7 @@ export default function NavBar() {
                     to={item.route}
                     style={{
                       textDecoration: "none",
-                      color: "white",
+                      color: "#16A085",
                       fontSize: 26,
                     }}
                   >
@@ -79,46 +121,6 @@ export default function NavBar() {
               ))}
             </List>
           </Box>
-
-          <MuiLink
-            underline="none"
-            href={AlinaRusuCV}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button
-              size="small"
-              variant="outlined"
-              borderRadius={100}
-              endIcon={<DownloadIcon />}
-              sx={{
-                px: 3,
-                borderRadius: 50,
-                background: "white",
-                "&:hover": {
-                  background: "#D0ECE7",
-                  color: "#0B5345",
-                },
-              }}
-            >
-              <Box
-                sx={{
-                  fontSize: 18,
-                  display: {
-                    mobile: "none",
-                    tablet: "none",
-                    laptop: "block",
-                    desktop: "block",
-                  },
-                }}
-              >
-                Download
-              </Box>
-              <Box ml={1} fontSize={18}>
-                CV
-              </Box>
-            </Button>
-          </MuiLink>
         </Toolbar>
       </AppBar>
     </div>
