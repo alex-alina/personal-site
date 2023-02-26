@@ -1,7 +1,7 @@
 import { Box, CssBaseline, Icon, Link, Typography } from "@mui/material";
 import { loadCSS } from "fg-loadcss";
 import React from "react";
-import exercism from "../assets/exercism.png";
+import ExercismSvg from "./ExercismSvg";
 
 export default function Intro() {
   React.useEffect(() => {
@@ -95,7 +95,6 @@ export default function Intro() {
               />
             </Box>
           </Link>
-
           <Link
             href="https://exercism.io/profiles/AlexAlina"
             target="_blank"
@@ -103,14 +102,24 @@ export default function Intro() {
             underline="none"
           >
             <Box
-              component="img"
-              width="40px"
-              height="40px"
-              verticalAlign="center"
-              borderRadius="50%"
-              src={exercism}
-              alt="exercism-logo"
-            />
+              sx={(theme) => ({
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                alignContent: "center",
+                width: "40px",
+                height: "40px",
+                marginRight: "10px",
+                padding: 0,
+                borderRadius: "50%",
+                backgroundColor: theme.palette.primary.main,
+                "&:hover": {
+                  backgroundColor: theme.palette.primary.main,
+                },
+              })}
+            >
+              <ExercismSvg width={30} height={30} fill="white" />
+            </Box>
           </Link>
         </Box>
       </Box>
