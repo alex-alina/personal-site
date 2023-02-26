@@ -19,7 +19,7 @@ export default function SideMenu() {
     <div>
       <IconButton
         edge="start"
-        color="inherit"
+        color="primary"
         aria-label="side-menu"
         aria-controls="side-menu"
         aria-haspopup="true"
