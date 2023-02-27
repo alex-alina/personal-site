@@ -25,7 +25,7 @@ export default function Contact() {
         </Link>{" "}
         or get in touch by email at{" "}
         <Link
-          href="mailto:alex.alina.rusu@gmail.com?subject=Hi Alina!"
+          href="mailto:alex.alina.rusu@gmail.com?subject=Hi%20Alina!"
           target="_blank"
           rel="noopener noreferrer"
         >
