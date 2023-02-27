@@ -30,6 +30,10 @@ let theme = createTheme({
     textSecondary: {
       main: "#34495E",
     },
+    cvButton: {
+      bg: "#E8F6F3",
+      bgHover: "#D0ECE7",
+    },
   },
   components: {
     MuiAppBar: {
@@ -57,6 +61,9 @@ let theme = createTheme({
           color: colors.turquoise[6],
           "&:hover": {
             color: colors.turquoise[9],
+          },
+          "&:visited": {
+            backgroundColor: colors.turquoise[6],
           },
         },
       },

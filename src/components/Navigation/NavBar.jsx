@@ -58,13 +58,18 @@ export default function NavBar() {
               sx={(theme) => ({
                 px: 3,
                 borderRadius: 50,
-                background: "#E8F6F3",
-                borderColor: "#E8F6F3",
+                background: theme.palette.cvButton.bg,
+                borderColor: theme.palette.cvButton.bg,
                 color: theme.palette.primary.nav,
                 "&:hover": {
-                  background: "#D0ECE7",
-                  borderColor: "#D0ECE7",
+                  background: theme.palette.cvButton.bgHover,
+                  borderColor: theme.palette.cvButton.bgHover,
                   color: theme.palette.primary.dark,
+                },
+                "&:visited": {
+                  background: theme.palette.cvButton.bg,
+                  borderColor: theme.palette.cvButton.bg,
+                  color: theme.palette.primary.nav,
                 },
               })}
             >

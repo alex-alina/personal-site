@@ -56,6 +56,9 @@ export default function Intro() {
                 "&:hover": {
                   backgroundColor: theme.palette.primary.dark,
                 },
+                "&:visited": {
+                  backgroundColor: theme.palette.primary.main,
+                },
               })}
             >
               <Icon
@@ -87,6 +90,9 @@ export default function Intro() {
                 "&:hover": {
                   backgroundColor: theme.palette.primary.dark,
                 },
+                "&:visited": {
+                  backgroundColor: theme.palette.primary.main,
+                },
               })}
             >
               <Icon
@@ -115,6 +121,9 @@ export default function Intro() {
                 backgroundColor: theme.palette.primary.main,
                 "&:hover": {
                   backgroundColor: theme.palette.primary.dark,
+                },
+                "&:visited": {
+                  backgroundColor: theme.palette.primary.main,
                 },
               })}
             >
