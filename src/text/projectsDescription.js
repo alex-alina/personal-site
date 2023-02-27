@@ -27,7 +27,7 @@ const projectsDescription = {
   projectThree: {
     title: "Meal Planner",
     description:
-      "Sustainable and planet friendly meal planner app (SPA). Team project. TypeScript | Koa | TypeORM | PostgreSQL| React | Redux | JS | CSS.",
+      "Sustainable and planet friendly meal planner app (SPA). Team project. TypeScript | Koa | TypeORM | PostgreSQL| React | Redux | JS.",
     image: mealPlanner,
     projectLink: "https://planet-friendly-meal-planner.netlify.com",
     gitHubLink: "https://github.com/alex-alina/dinner-planner-client",

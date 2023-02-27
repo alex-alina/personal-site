@@ -24,6 +24,7 @@ export default function NavBar() {
             justifyContent: "space-between",
             px: 0,
             marginX: "auto",
+            marginY: 0.25,
             width: {
               mobile: "80%",
               tablet: "90%",

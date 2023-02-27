@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <Box component="section" display="flex" flexDirection="column">
       <Typography component="h2" variant="h4" mb={2} talign="left">
-        Projects
+        Learning Projects
       </Typography>
       <Box
         sx={{

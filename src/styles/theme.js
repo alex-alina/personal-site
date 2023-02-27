@@ -61,6 +61,16 @@ let theme = createTheme({
         },
       },
     },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          color: colors.turquoise[6],
+          "&:hover": {
+            color: colors.turquoise[9],
+          },
+        },
+      },
+    },
     MuiIcon: {
       root: {
         fontSize: "30px",

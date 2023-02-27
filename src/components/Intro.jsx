@@ -54,7 +54,7 @@ export default function Intro() {
                 borderRadius: "50%",
                 backgroundColor: theme.palette.primary.main,
                 "&:hover": {
-                  backgroundColor: theme.palette.primary.main,
+                  backgroundColor: theme.palette.primary.dark,
                 },
               })}
             >
@@ -85,7 +85,7 @@ export default function Intro() {
                 borderRadius: "50%",
                 backgroundColor: theme.palette.primary.main,
                 "&:hover": {
-                  backgroundColor: theme.palette.primary.main,
+                  backgroundColor: theme.palette.primary.dark,
                 },
               })}
             >
@@ -114,7 +114,7 @@ export default function Intro() {
                 borderRadius: "50%",
                 backgroundColor: theme.palette.primary.main,
                 "&:hover": {
-                  backgroundColor: theme.palette.primary.main,
+                  backgroundColor: theme.palette.primary.dark,
                 },
               })}
             >

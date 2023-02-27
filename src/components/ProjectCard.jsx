@@ -25,12 +25,12 @@ export default function ProjectCard(props) {
   return (
     <Card
       sx={{
-        mb: 4,
+        mb: 6,
         width: {
           mobile: "100%",
           tablet: "80%",
-          laptop: "48%",
-          desktop: "48%",
+          laptop: "47%",
+          desktop: "47%",
         },
       }}
     >
