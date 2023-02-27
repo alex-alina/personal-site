@@ -101,7 +101,7 @@ export default function AboutSection() {
                 )
               }
               sx={(theme) => ({
-                px: 0,
+                px: 2,
                 borderRadius: 50,
                 fontSize: 18,
                 fontWeight: 300,
