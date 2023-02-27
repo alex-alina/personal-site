@@ -1,12 +1,17 @@
-import { Box, Typography } from "@mui/material";
-import React from "react";
-import profilePic from "../assets/profilePic.jpg";
+import ExpandLessOutlinedIcon from "@mui/icons-material/ExpandLessOutlined";
+import ExpandMoreOutlinedIcon from "@mui/icons-material/ExpandMoreOutlined";
+import { Box, Button, Typography } from "@mui/material";
+import React, { useState } from "react";
+import profilePic from "../assets/alina-rusu.jpg";
 import aboutContent from "../text/aboutContent";
 import Contact from "./Contact";
 import Faq from "./Faq";
 
 export default function AboutSection() {
   const { greeting, intro, ...content } = aboutContent;
+  const [isVisible, setIsVisible] = useState(false);
+  const display = isVisible ? "block" : "none";
+  const showMoreToggle = () => setIsVisible(!isVisible);
 
   return (
     <Box
@@ -16,13 +21,13 @@ export default function AboutSection() {
         justifyContent: "center",
         alignItems: "center",
         marginX: "auto",
-        marginTop: 4,
+        marginTop: [4, 4, 6, 6],
         overflow: "hidden",
         width: {
           mobile: "80%",
           tablet: "90%",
-          laptop: "70%",
-          desktop: "65%",
+          laptop: "75%",
+          desktop: "75%",
         },
       }}
     >
@@ -33,13 +38,13 @@ export default function AboutSection() {
           justifyContent: {
             mobile: "center",
             tablet: "center",
-            laptop: "space-between",
+            laptop: "center",
             desktop: "space-between",
           },
           alignItems: {
             mobile: "center",
             tablet: "center",
-            laptop: "flex-start",
+            laptop: "center",
             desktop: "flex-start",
           },
           margin: "0 auto",
@@ -47,7 +52,7 @@ export default function AboutSection() {
           flexDirection: {
             mobile: "column",
             tablet: "column",
-            laptop: "row",
+            laptop: "column",
             desktop: "row",
           },
         }}
@@ -57,7 +62,7 @@ export default function AboutSection() {
             width: {
               mobile: "100%",
               tablet: "100%",
-              laptop: "75%",
+              laptop: "100%",
               desktop: "75%",
             },
           }}
@@ -72,24 +77,48 @@ export default function AboutSection() {
           <Typography lineHeight={1.5} align="left">
             {intro}
           </Typography>
-          {Object.values(content).map((p, i) => {
-            return (
-              <Typography
-                key={i}
-                mt={2}
-                textAlign={["align-left", "align-left", "justify", "justify"]}
-              >
-                {p}
-              </Typography>
-            );
-          })}
+          <Box display={[display, display, "block", "block"]}>
+            {Object.values(content).map((p, i) => {
+              return (
+                <Typography
+                  key={i}
+                  mt={2}
+                  textAlign={["align-left", "align-left", "justify", "justify"]}
+                >
+                  {p}
+                </Typography>
+              );
+            })}
+          </Box>
+          <Box display={["block", "block", "none", "none"]}>
+            <Button
+              size="large"
+              endIcon={
+                isVisible ? (
+                  <ExpandLessOutlinedIcon />
+                ) : (
+                  <ExpandMoreOutlinedIcon />
+                )
+              }
+              sx={(theme) => ({
+                px: 0,
+                borderRadius: 50,
+                fontSize: 18,
+                fontWeight: 300,
+                color: theme.palette.primary.main,
+              })}
+              onClick={() => showMoreToggle()}
+            >
+              {isVisible ? `Show less` : `Read more`}
+            </Button>
+          </Box>
         </Box>
 
-        <Box>
+        <Box mt={[2, 2, 0, 0]}>
           <Box
             component="img"
-            width="200px"
-            borderRadius={5}
+            width="220px"
+            borderRadius={50}
             src={profilePic}
             alt="profile"
           />

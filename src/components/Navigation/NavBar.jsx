@@ -27,8 +27,8 @@ export default function NavBar() {
             width: {
               mobile: "80%",
               tablet: "90%",
-              laptop: "70%",
-              desktop: "65%",
+              laptop: "75%",
+              desktop: "75%",
             },
           }}
         >
@@ -53,18 +53,17 @@ export default function NavBar() {
             <Button
               size="small"
               variant="outlined"
-              borderRadius={100}
               endIcon={<DownloadIcon />}
               sx={(theme) => ({
                 px: 3,
                 borderRadius: 50,
                 background: "#E8F6F3",
                 borderColor: "#E8F6F3",
-                color: "#138D75",
+                color: theme.palette.primary.nav,
                 "&:hover": {
                   background: "#D0ECE7",
                   borderColor: "#D0ECE7",
-                  color: "#0B5345",
+                  color: theme.palette.primary.dark,
                 },
               })}
             >
@@ -106,13 +105,26 @@ export default function NavBar() {
               }}
             >
               {menuContent.map((item, index) => (
-                <ListItem key={index} sx={{ px: 0 }}>
+                <ListItem
+                  key={index}
+                  sx={{
+                    px: 0,
+                    color: "#16A085",
+                    "&:hover": {
+                      color: "#0E6655",
+                      borderRadius: 50,
+                      paddingTop: 0,
+                      paddingBottom: 0,
+                    },
+                  }}
+                >
                   <Link
                     to={item.route}
                     style={{
                       textDecoration: "none",
-                      color: "#16A085",
+                      color: "inherit",
                       fontSize: 26,
+                      margin: "0 auto",
                     }}
                   >
                     {item.text}

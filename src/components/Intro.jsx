@@ -33,7 +33,7 @@ export default function Intro() {
           <Typography lineHeight={1.5}>Based in Montreal</Typography>
         </Box>
 
-        <Box display="flex" mr={2}>
+        <Box display="flex" mr={2} mt={[2, 2, 0, 0]}>
           <Link
             href="https://github.com/alex-alina/"
             target="_blank"

@@ -5,7 +5,7 @@ let theme = createTheme({
   typography: {
     fontFamily: "Roboto",
     fontSize: 20,
-    h4: { color: colors.turquoise[5] },
+    h4: { color: colors.turquoise[5], fontWeight: 300 },
     h5: { color: colors.grey[8] },
     body1: { color: colors.grey[8] },
     subtitle1: { color: colors.turquoise[5] },
@@ -21,6 +21,8 @@ let theme = createTheme({
   palette: {
     primary: {
       main: "#16A085",
+      nav: "#138D75",
+      dark: "#0B5345",
     },
     secondary: {
       main: "#fff",

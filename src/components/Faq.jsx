@@ -7,7 +7,10 @@ import {
   Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import faqContent from "../text/faqContent";
+import faqContent, {
+  workFeedback,
+  workFeedbackTitle,
+} from "../text/faqContent";
 import gardenOne from "../assets/gardenOne.png";
 import gardenTwo from "../assets/gardenTwo.jpg";
 import gardenThree from "../assets/gardenThree.jpg";
@@ -28,7 +31,7 @@ export default function Faq() {
         width: {
           mobile: "100%",
           tablet: "100%",
-          laptop: "75%",
+          laptop: "100%",
           desktop: "75%",
         },
       }}
@@ -50,26 +53,62 @@ export default function Faq() {
       </Box>
       <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography variant="subtitle1">{workFeedbackTitle}</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <ul
+            style={{
+              listStyleType: "none",
+              paddingLeft: 0,
+            }}
+          >
+            {workFeedback.map((item, i) => {
+              return (
+                <li key={i}>
+                  <Box display="flex">
+                    <Box display="flex">
+                      <Box
+                        component="span"
+                        fontSize={30}
+                        color="#16A085"
+                        mr={2}
+                      >
+                        &bull;
+                      </Box>
+                    </Box>
+                    <Typography align="left" mt={1}>
+                      {item}
+                    </Typography>
+                  </Box>
+                </li>
+              );
+            })}
+          </ul>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography variant="subtitle1">My Tiny Origami Gardens</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Box
             display="flex"
-            flexDirection={["column", "column", "row", "row"]}
+            flexDirection={["column", "row", "row", "row"]}
             justifyContent="space-around"
             alignItems="center"
+            flexWrap="wrap"
           >
             {gardens.map((garden, index) => (
-              <Box key={index}>
-                <Box
-                  component="img"
-                  width={160}
-                  height={200}
-                  borderRadius={10}
-                  src={garden}
-                  alt={`origami garden ${index}`}
-                />
-              </Box>
+              <Box
+                component="img"
+                key={index}
+                width={160}
+                height={200}
+                marginTop={[2, 2, 1, 1]}
+                borderRadius={5}
+                src={garden}
+                alt={`origami garden ${index}`}
+              />
             ))}
           </Box>
         </AccordionDetails>

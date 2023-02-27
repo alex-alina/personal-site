@@ -18,8 +18,8 @@ export default function Home() {
         width: {
           mobile: "80%",
           tablet: "90%",
-          laptop: "70%",
-          desktop: "65%",
+          laptop: "75%",
+          desktop: "75%",
         },
       })}
     >

@@ -15,22 +15,22 @@ const projectsDescription = {
     gitHubBtn: "Open on GitHub",
   },
   projectTwo: {
-    title: "Meal Planner",
-    description:
-      "Sustainable and planet friendly meal planner app (SPA). Team project. TypeScript | Koa | TypeORM | PostgreSQL| React | Redux | JS | CSS.",
-    image: mealPlanner,
-    projectLink: "https://planet-friendly-meal-planner.netlify.com",
-    gitHubLink: "https://github.com/alex-alina/dinner-planner-client",
-    openProjectBtn: "Open Project",
-    gitHubBtn: "Open on GitHub",
-  },
-  projectThree: {
     title: "Career Page",
     description:
       "Responsive job posting page connected to an application form. React | JavaScript | Material-UI | CSS | SPA | Input validation.",
     image: careerPage,
     projectLink: "https://career-page.netlify.com/",
     gitHubLink: "https://github.com/alex-alina/ams-recruitment",
+    openProjectBtn: "Open Project",
+    gitHubBtn: "Open on GitHub",
+  },
+  projectThree: {
+    title: "Meal Planner",
+    description:
+      "Sustainable and planet friendly meal planner app (SPA). Team project. TypeScript | Koa | TypeORM | PostgreSQL| React | Redux | JS | CSS.",
+    image: mealPlanner,
+    projectLink: "https://planet-friendly-meal-planner.netlify.com",
+    gitHubLink: "https://github.com/alex-alina/dinner-planner-client",
     openProjectBtn: "Open Project",
     gitHubBtn: "Open on GitHub",
   },
