@@ -117,10 +117,11 @@ export default function AboutSection() {
         <Box mt={[2, 2, 0, 0]}>
           <Box
             component="img"
-            width="220px"
+            width={[220, 220, 220, 240]}
             borderRadius={50}
             src={profilePic}
             alt="profile"
+            ml={[0, 0, 0, 6]}
           />
         </Box>
       </Box>

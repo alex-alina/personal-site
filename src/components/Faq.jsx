@@ -25,7 +25,7 @@ export default function Faq() {
       display="flex"
       flexDirection="column"
       alignSelf="flex-start"
-      marginTop={4}
+      marginTop={[4, 2, 2, 6]}
       marginBottom={0}
       sx={{
         width: {
@@ -36,7 +36,7 @@ export default function Faq() {
         },
       }}
     >
-      <Typography variant="h4" align="left">
+      <Typography variant="h4" align="left" mb={2}>
         More info
       </Typography>
       <Box>
