@@ -18,9 +18,9 @@ The goal of this project was to create a responsive, cross device/browser compat
 
 ## Setup
 
-* Clone the repository `git clone git@github.com:alex-alina/personal-page.git`
+* Clone the repository `git clone git@github.com:alex-alina/personal-site.git`
 * Install the dependencies using `npm install`
-* Start the server using `npm start`
+* Start the server using `npm run start`
 
 ## License
 
