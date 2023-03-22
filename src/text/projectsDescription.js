@@ -2,12 +2,24 @@ import spirograph from "../assets/spirograph.png";
 import careerPage from "../assets/careerPage.png";
 import multiply from "../assets/multiply.png";
 import mealPlanner from "../assets/mealPlanner.png";
+import habitHop from "../assets/habitHop.png";
 
 const projectsDescription = {
+  currentProject: {
+    title: "Habit Hop App - WIP",
+    description:
+      "Responsive, full stack, habit tracker app. React | Redux | JS | Styled components | Styled system | Formik | Jest | TS | Koa | TypeORM | Postgres.",
+    image: habitHop,
+    projectLink:
+      "https://github.com/alex-alina/habit-hop-client#demo---desktop-view",
+    gitHubLink: "https://github.com/alex-alina/habit-hop-client",
+    openProjectBtn: "Github Demo",
+    gitHubBtn: "Open on GitHub",
+  },
   projectOne: {
     title: "Spirograph App",
     description:
-      "Drawing app that makes mathematical roulette curves. React | JS | Paper.js | Styled Components | ESLint | Airbnb JS Style Guide.",
+      "Drawing app that makes mathematical roulette curves and draws circular patterns. React | JS | Paper.js | Styled Components | ESLint | Airbnb JS Style Guide.",
     image: spirograph,
     projectLink: "https://spirograph-app.netlify.com/",
     gitHubLink: "https://github.com/alex-alina/spirograph",

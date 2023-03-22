@@ -46,12 +46,13 @@ export default function ProjectCard(props) {
             title="project cover image"
             sx={{
               width: "auto",
-              maxWidth: "100%",
+              maxWidth: "95%",
               display: "block",
               height: "auto",
-              minHeight: 330,
+              minHeight: 310,
               objectFit: "fill",
               objectPosition: "center",
+              margin: "auto",
             }}
           />
           <CardContent
