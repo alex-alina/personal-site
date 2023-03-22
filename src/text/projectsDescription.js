@@ -19,7 +19,7 @@ const projectsDescription = {
   projectOne: {
     title: "Spirograph App",
     description:
-      "Drawing app that makes mathematical roulette curves and draws circular patterns. React | JS | Paper.js | Styled Components | ESLint | Airbnb JS Style Guide.",
+      "Drawing app that makes mathematical roulette curves and draws circular patterns. React | JS | Paper.js | Styled Components | ESLint.",
     image: spirograph,
     projectLink: "https://spirograph-app.netlify.com/",
     gitHubLink: "https://github.com/alex-alina/spirograph",
