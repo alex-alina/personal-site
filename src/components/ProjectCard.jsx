@@ -97,7 +97,7 @@ export default function ProjectCard(props) {
           rel="noopener noreferrer"
           underline="none"
         >
-          <Button size="medium" color="primary">
+          <Button size="medium" color="primary" disabled>
             {openProjectBtn}
           </Button>
         </Link>
