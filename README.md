@@ -2,8 +2,7 @@
 
 The goal of this project was to create a responsive, cross device/browser compatible portfolio page.
 
-## Visit my portfolio at [www.alinarusu.com ](https://www.alinarusu.com)
-## [Demo on Netlify](https://alina-rusu.netlify.com/)
+## Visit my portfolio at [www.alinarusu.com ](http://www.alinarusu.com)
 
 ## Tech stack
 
