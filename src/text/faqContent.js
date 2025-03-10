@@ -1,27 +1,33 @@
-export const workFeedbackTitle = "Feedback from colleagues describes me as...";
+export const workFeedbackTitle =
+  "My colleagues and managers describes me as...";
 export const workFeedback = [
   '"solution-oriented, eager to learn and always in a good mood"',
   '"very committed to her work with an ability to take initiative"',
   '"a great team player always ready to help out others and help the team achieve their goals"',
-  '"excellent at collaborating with different people to get work done"',
+  '"being excellent at collaborating with different people to get work done"',
   '"very driven and structured at her work"',
-  '" great at receiving and giving feedback, always thinking of how to improve herself and the team"',
+  '"great at receiving and giving feedback, always thinking of how to improve herself and the team"',
   '"very energetic and brings a very positive vibe to the team"',
   '"showing an eagerness to learn, technical understanding and the ability to focus on work"',
   '"helping the team to organize and plan work during scrum/refinement meetings"',
   '"having a sense of responsibility and getting-things-done attitude"',
   '"having great communication, coworking and organizing skills"',
+  '"always willing to support junior developers, offering guidance and sharing knowledge that helps them grow"',
+  '"a genuinely kind and supportive colleague who makes the workplace more enjoyable for everyone"',
+  '"always asking inquisitive questions that helped clarify requirements and guide the team in the right direction"',
+  '"having a proactive approach to problem-solving and openness to feedback"',
+  '"having a remarkable attention to detail as a front-end developer"',
 ];
 const faqContent = [
   {
     question: "Tech Stack",
     answer:
-      "JS - TS - React - Redux - HTML - CSS -  SCSS  - Styled-System - Styled-Components - Storybook - Jest - React Testing Library - ButterCMS - Node.js - RESTful APIs.",
+      "JavaScript - TypeScript - React - Redux - React Query - HTML - CSS - TailwindCSS - Styled-System - Headless components libraries - Storybook - Jest - React Testing Library - Headless CMS - Node.js - RESTful APIs - Websockets.",
   },
   {
     question: "Tech & Collaboration Tools",
     answer:
-      "AzureDevOps - Docker - Git - GitHub - Bitbucket - Postman - Unix terminal - Ubuntu OS - Mac OS - Sketch - Figma - Jira - Trello - Slack - Keybase - PivotalTracker.",
+      "AzureDevOps - Docker - Git - GitHub - Bitbucket - Postman - Unix terminal - Ubuntu OS - Mac OS - Sketch - Figma - Jira - Trello - Slack.",
   },
   {
     question: "Ideal company",

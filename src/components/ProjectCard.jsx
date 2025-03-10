@@ -34,13 +34,6 @@ export default function ProjectCard(props) {
         },
       }}
     >
-      <CardActionArea>
-        <Link
-          href={projectLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          underline="none"
-        >
           <CardMedia
             image={image}
             title="project cover image"
@@ -87,8 +80,6 @@ export default function ProjectCard(props) {
               {stack}
             </Typography>
           </CardContent>
-        </Link>
-      </CardActionArea>
 
       <CardActions>
         <Link

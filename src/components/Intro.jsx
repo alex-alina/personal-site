@@ -12,7 +12,7 @@ export default function Intro() {
   }, []);
 
   return (
-    <React.Fragment>
+    <>
       <CssBaseline />
       <Box
         component="section"
@@ -30,7 +30,7 @@ export default function Intro() {
             Alina Rusu
           </Typography>
           <Typography lineHeight={1.5}>Front End Developer</Typography>
-          <Typography lineHeight={1.5}>Based in Montreal</Typography>
+          <Typography lineHeight={1.5}>Based in Amsterdam</Typography>
         </Box>
 
         <Box display="flex" mr={2} mt={[2, 2, 0, 0]}>
@@ -132,6 +132,6 @@ export default function Intro() {
           </Link>
         </Box>
       </Box>
-    </React.Fragment>
+    </>
   );
 }

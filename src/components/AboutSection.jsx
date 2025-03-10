@@ -6,6 +6,7 @@ import profilePic from "../assets/alina-rusu.jpg";
 import aboutContent from "../text/aboutContent";
 import Contact from "./Contact";
 import Faq from "./Faq";
+import Intro from "./Intro";
 
 export default function AboutSection() {
   const { greeting, intro, ...content } = aboutContent;
@@ -67,6 +68,7 @@ export default function AboutSection() {
             },
           }}
         >
+          <Intro />
           <Typography
             variant="h4"
             mb={2}

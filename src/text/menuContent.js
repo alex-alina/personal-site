@@ -1,12 +1,13 @@
 const menuContent = [
   {
-    text: 'Projects',
+    text: 'About me',
     route: '/',
   },
   {
-    text: 'About me',
-    route: '/about',
+    text: 'Projects',
+    route: '/projects',
   },
+
 ];
 
 export default menuContent;
