@@ -30,7 +30,7 @@ const faqContent = [
       "AzureDevOps - Docker - Git - GitHub - Bitbucket - Postman - Unix terminal - Ubuntu OS - Mac OS - Sketch - Figma - Jira - Trello - Slack.",
   },
   {
-    question: "Ideal company",
+    question: "Ideal worplace",
     answer:
       "My ideal workplace would be an agile environment with a growth mindset and a strong focus on users, teamwork, collaboration and learning. A place with an inclusive, open culture, that values work ethic and good communication.",
   },
